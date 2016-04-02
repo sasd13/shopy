@@ -5,13 +5,13 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecordLot {
+public class RecordsLot {
     
     private Timestamp recordDate;
     private List<Record> records;
     private Manager manager;
 
-    public RecordLot() {
+    public RecordsLot() {
         records = new ArrayList<>();
     }
 
