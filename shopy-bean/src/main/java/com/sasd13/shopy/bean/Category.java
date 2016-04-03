@@ -6,7 +6,7 @@ public class Category {
     private String name;
 
     public long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(long id) {
@@ -14,7 +14,7 @@ public class Category {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {

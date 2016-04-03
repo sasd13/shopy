@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-    <artifactId>shopy</artifactId>
-    <groupId>com.sasd13.shopy</groupId>
-    <version>1.0</version>
-  </parent>
+        <artifactId>shopy</artifactId>
+        <groupId>com.sasd13.shopy</groupId>
+        <version>1.0</version>
+    </parent>
 
     <groupId>com.sasd13.shopy</groupId>
     <artifactId>shopy-web</artifactId>
@@ -17,14 +17,20 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mavenwar.version>2.3</mavenwar.version>
     </properties>
     
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
-            <version>7.0</version>
+            <version>${javax.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency> 
+            <groupId>org.springframework</groupId> 
+            <artifactId>spring-webmvc</artifactId> 
+            <version>${spring.version}</version> 
         </dependency>
     </dependencies>
 
@@ -33,10 +39,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>${mavencompiler.version}</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
@@ -45,7 +51,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <version>${mavenwar.version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -53,7 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.6</version>
+                <version>${mavendependency.version}</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
@@ -67,7 +73,7 @@
                                 <artifactItem>
                                     <groupId>javax</groupId>
                                     <artifactId>javaee-endorsed-api</artifactId>
-                                    <version>7.0</version>
+                                    <version>${javax.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
                             </artifactItems>

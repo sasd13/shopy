@@ -19,7 +19,7 @@ public class SalesLot {
     }
 	
     public long getId() {
-        return this.id;
+        return id;
     }
 	
     public void setId(long id) {
@@ -27,7 +27,7 @@ public class SalesLot {
     }
 	
     public Timestamp getSaleDate() {
-        return this.saleDate;
+        return saleDate;
     }
 
     public void setSaleDate(Timestamp saleDate) {

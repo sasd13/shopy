@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div id="cssmenu">
+<%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
+<div id="menu">
 	<ul>
    		<li><a href="<c:url value="/index"/>"><span>Accueil</span></a></li>
    		<li class="active has-sub"><a href="#"><span>Article</span></a>
@@ -23,16 +24,6 @@
     			<c:if test="${sessionScope.right == 1 || sessionScope.right == 0}">
          			<li><a href="<c:url value="/seller/proforma"/>"><span>Proformas</span></a></li>
          		</c:if>
-      		</ul>
-   		</li>
-   		<li class="active has-sub"><a href="#"><span>Relation</span></a>
-    		<ul>
-         		<c:if test="${sessionScope.right == 1 || sessionScope.right == 0}">
-         			<li><a href="<c:url value="/seller/client"/>"><span>Clients</span></a></li>
-         		</c:if>
-         		<c:if test="${sessionScope.right == 2 || sessionScope.right == 0}">
-         			<li><a href="<c:url value="/admin/provider"/>"><span>Founisseurs</span></a></li>
-      			</c:if>
       		</ul>
    		</li>
    		<c:if test="${sessionScope.right == 2 || sessionScope.right == 0}">

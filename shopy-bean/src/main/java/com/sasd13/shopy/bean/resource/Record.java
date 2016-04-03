@@ -7,7 +7,7 @@ public class Record {
     private Product product;
 
     public long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(long id) {

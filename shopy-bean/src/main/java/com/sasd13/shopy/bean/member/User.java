@@ -10,8 +10,6 @@ public abstract class User {
     private Timestamp signDate;
     private Status status;
 
-    public abstract Right getRight();
-
     public long getId() {
         return id;
     }
@@ -59,4 +57,6 @@ public abstract class User {
     public void setStatus(Status status) {
         this.status = status;
     }
+    
+    public abstract Right getRight();
 }

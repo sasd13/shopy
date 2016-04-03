@@ -1,0 +1,55 @@
+<web-app 
+    metadata-complete="true"
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5">
+	
+    <display-name>Shopy</display-name>
+
+    <servlet>
+        <servlet-name>servlet-web</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>99</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet-web</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>servlet-seller</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet-seller</servlet-name>
+        <url-pattern>/seller/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>servlet-manager</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet-manager</servlet-name>
+        <url-pattern>/manager/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>servlet-admin</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet-admin</servlet-name>
+        <url-pattern>/admin/</url-pattern>
+    </servlet-mapping>
+
+</web-app>

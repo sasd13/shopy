@@ -10,7 +10,7 @@ public class Product {
     private Category category;
 
     public long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(long id) {
@@ -18,7 +18,7 @@ public class Product {
     }
 
     public String getCode() {
-        return this.code;
+        return code;
     }
 
     public void setCode(String code) {
@@ -26,7 +26,7 @@ public class Product {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
@@ -34,7 +34,7 @@ public class Product {
     }
 
     public String getDescription() {
-        return this.description;
+        return description;
     }
 
     public void setDescription(String description) {
@@ -66,7 +66,7 @@ public class Product {
     }
 
     public Category getCategory() {
-        return this.category;
+        return category;
     }
 
     public void setCategory(Category category) {

@@ -1,10 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title>Connexion</title>
-		<jsp:include page="/WEB-INF/head.jsp"/>
+		<jsp:include page="inc/css-commons.jsp"/>
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/form.css"/>
 	</head>
 	
 	<body>
@@ -15,11 +17,11 @@
 				<legend>Connexion</legend>
 				<div>
 					<label class="label-input">Identifiant</label>
-					<input type="text" name="user_login" required/>
+					<input type="text" name="username" required/>
 				</div>
 				<div>
 					<label class="label-input">Mot de passe</label>
-					<input type="password" name="user_password" required/>
+					<input type="password" name="password" required/>
 				</div>
 			</fieldset>
 			<div class="buttons">

@@ -1,14 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title>Catégorie</title>
-		<jsp:include page="/WEB-INF/head.jsp"/>
+		<jsp:include page="../inc/css-commons.jsp"/>
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/form.css"/>
+        <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/table.css"/>
 	</head>
 	
 	<body>
-		<jsp:include page="/WEB-INF/menu.jsp"/>
+		<jsp:include page="../inc/menu.jsp"/>
 		<h1>Catégorie</h1>
 		<form name="form_category" action="<c:url value="/admin/category"/>" method="post">
 			<span class="form-message">${message}</span>

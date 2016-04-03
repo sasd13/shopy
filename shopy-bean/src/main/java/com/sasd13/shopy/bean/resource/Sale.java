@@ -7,7 +7,7 @@ public class Sale {
     private Product product;
 
     public long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(long id) {
@@ -15,7 +15,7 @@ public class Sale {
     }
 
     public double getQuantity() {
-        return this.quantity;
+        return quantity;
     }
 
     public void setQuantity(double quantity) {
@@ -23,7 +23,7 @@ public class Sale {
     }
 
     public double getUnitPrice() {
-        return this.unitPrice;
+        return unitPrice;
     }
 
     public void setUnitPrice(double unitPrice) {
@@ -31,7 +31,7 @@ public class Sale {
     }
 
     public double getRefund() {
-        return this.refund;
+        return refund;
     }
 
     public void setRefund(double refund) {
@@ -39,7 +39,7 @@ public class Sale {
     }
 
     public Product getProduct() {
-        return this.product;
+        return product;
     }
 
     public void setProduct(Product product) {

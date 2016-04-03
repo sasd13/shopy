@@ -28,7 +28,7 @@ public enum Right {
 
         for (Right bufferedRight : values()) {
             if (bufferedRight.getName().equalsIgnoreCase(name)) {
-                return bufferedRight;
+                right = bufferedRight;
             }
         }
 
@@ -40,7 +40,7 @@ public enum Right {
 
         for (Right bufferedRight : values()) {
             if (bufferedRight.getLevel() == level) {
-                return bufferedRight;
+                right = bufferedRight;
             }
         }
 
