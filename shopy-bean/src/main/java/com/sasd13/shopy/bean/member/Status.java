@@ -22,7 +22,7 @@ public enum Status {
 
         for (Status bufferedStatus : values()) {
             if (bufferedStatus.getName().equalsIgnoreCase(name)) {
-                return bufferedStatus;
+                status = bufferedStatus;
             }
         }
 

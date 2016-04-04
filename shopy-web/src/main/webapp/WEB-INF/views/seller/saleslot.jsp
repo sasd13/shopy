@@ -241,7 +241,7 @@
 				</c:otherwise>
 			</c:choose>
 		</form>
-		<div class="csstable">
+		<div class="table">
 			<table>
 				<tr>
 					<td class="td-width-xsmall">N°</td>
